@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="BOOTSTRAP/css/bootstrap.css">
+    <link rel="stylesheet" href="./mystyle/style.css">
+</head>
+
+<body>
+    <section class="header">
+         <div class="container-fluid background-banner">
+        <!-- Navbar image and button -->
+        <div class="d-flex justify-content-between sticky-top">
+            <div class="ms-5 mt-3 logo-custom"><img class="logo" src="./pics/logo.png" width="132" height="39"
+                    alt="Images"></div>
+            <div class="me-4 mt-3">
+                <button type="button" class="btn btn-danger ps-4 pe-4">Sign In</button>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center home-content">
+            <div class="home text-white">
+                <h1 class="heading-custom">Unlimited movies ,TV <br>&nbsp;&nbsp;&nbsp; shows and more.</h1>
+                <h4 class="text-center mt-3">Watch anywhere. Cancel anytime.</h4>
+                <p class="fw-bold">Ready to watch? Enter your email to create or restart your membership.</p>
+                <div class="input-group mb-3 input-div">
+                    <input id="channel" type="text" class="form-control p-3" placeholder="Email address"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <span onclick="welcomeChannel()"
+                        class="button input-group-text bg-danger text-white fw-bold ps-2 pe-2" id="basic-addon2">Get
+                        started ></span>
+                </div>
+            </div>
+        </div>
+       </div>
+    </section>
+    <!-- Second section -->
+    <section class="body section">
+        <div class="container-fluid bg-black text-white second-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12 mt-5 p-5">
+                    <h2 class="fs-1 fw-bold">Enjoy on your TV.</h2>
+                    <p style="font-size: 25px;">Watch on smart TVs, PlayStation, Xbox,<br> Chromecast, Apple TV, Blu-ray
+                        players and  more.</p>
+                </div>
+                <div class="col-lg-6 col-12 mt-5">
+                    <img class="netflix-content" src="./pics/image2.png" width="350" height="380" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Third section -->
+    <section class="body section">
+
+        <div class="container-fluid bg-black text-white third-content">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-6 col-12 mt-5">
+                    <img class="netflix-content" src="./pics/mobile3.jpg" width="350" height="380" alt="">
+                    
+                </div>
+                <div class="col-lg-6 col-12" style="margin-top: 130px;">
+                    <h1>Download your shows <br> to watch offline.</h1>
+                    <p class="fs-4">Stream unlimited movies and TV shows on <br> your phone, tablet, laptop, and TV.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>    
+    <!-- fourth section -->
+    <section class="body section">  
+        <div class="container-fluid bg-black text-white forth-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12" style="margin-top: 130px;">
+                    <h1 class="ms-5">Create profiles for <br> kids.</h1>
+                    <p class="fs-4 ms-5">Send children on adventures with their  favourite characters in a space
+                        made just for them free with your membership. </p>
+                </div>
+                <div class="col-lg-6 col-12 mt-5">
+                    <img class="netflix-content" src="./pics/image4.png" alt="image" width="350" height="380">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>    
+
+
+    <!-- footer-->
+    <footer class="bg-dark text-white pt-5 pb-5 footer-custom" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 ">
+                    <img src="pics/logo.png" alt="Logo" width="120" height="30"
+                        class="d-inline-block netflix-content align-text-top">
+                </div>
+                <div class="col-lg-3 footer-small">
+                    <div class="footer-section">
+                        <ul>
+                            <li> FAQ</li>
+                            <li>Investor Relations</li>
+                            <li>Privacy</li>
+                            <li>Blog</li>
+                            <li>Speed Test</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 footer-small">
+                    <div class="footer-section">
+                        <ul>
+                            <li> Help Center</li>
+                            <li>Cookie preference</li>
+                            <li>Jobs</li>
+                            <li>Legal Notices</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 footer-small">
+                    <div class="footer-section">
+                        <ul>
+                            <li> Account</li>
+                            <li>Ways To Watch</li>
+                            <li>Only on Netflix</li>
+                            <li>Contact Us </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow" onclick="goTop()"> &uarr; </div>
+           
+        </div>
+    </footer>
+    
+    <script>
+
+        function welcomeChannel() {
+            let channel = document.getElementById("channel")
+            if (channel.value === "") {
+                alert("Enter Your Username or Email Address")
+            } else {
+                alert("Welcome " + channel.value)
+                channel.value = ""
+            }
+        }
+
+        function goTop(){
+            window.scrollTo({top:0,behavior:"smooth"})
+        }
+    </script>
+
+</body>
+
+</html>
